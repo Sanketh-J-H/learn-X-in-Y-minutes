@@ -147,8 +147,8 @@ if __name__ == "__main__":
     queue = Queue()
 
     # Start the data provider process
-    # data_process = Process(target=data_provider, args=(queue,))
-    data_process = Process(target=start_client, args=(queue,))
+    data_process = Process(target=data_provider, args=(queue,))
+    # data_process = Process(target=start_client, args=(queue,))
     data_process.start()
 
     # Start the GUI application
